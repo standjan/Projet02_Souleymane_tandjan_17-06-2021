@@ -1,0 +1,669 @@
+/***********L'ENSEMBLE DE MON PROJET*************/
+
+* ::before ::after{               /****Avant et Après****/
+  box-sizing: border-box;         /****Dimensionnement de la boite***/ 
+  margin: 0;                      /****Marge*****/
+  padding: 0;                     /****Rembourrage*****/
+}
+
+html, body {
+  font-family: Raleway;           /*******font d'ecriture***/
+  position: absolute;
+  right: 20px;
+  left: 20px;
+}
+  /************Flexé__les__elements_du___LOGO___NAVBARRES___FILTRES*************/
+.FlexCentre {
+  display: flex;               /******affichage flexible******/
+  justify-content: center;     /******justifier-contenu*******/
+  align-items: center;         /******aligner-éléments********/
+} 
+
+  /*********Flexé-autour******/
+.FlexAround {
+  display: flex;                    /*****Affichage flexible****/
+  justify-content: space-around;    /*****justifie le contenu***/
+  align-items: center;              /*****Aligne les elements****/
+}
+
+  /***********Flexé entre element***/
+.FlexBetween {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+  /************Flexé_-_-_-_les allignements des tableaux en colonnes*************/
+  /************Flexé-les-elements-au-Centre**********/
+.FlexColumnCentre {
+  display: flex;               /******affichage flexible******/
+  flex-direction: column;    /******justifier-contenu*******/
+  justify-content: center;
+  align-items: center;         /******aligner-éléments au centre********/
+} 
+
+  /*********Flexé-autour-des-Colonnes******/
+.FlexColumnAround {
+  display: flex;                    /*****Affichage flexible****/
+  flex-direction: column;           /*****Flexé en colonne
+    justify-content: space-around;    /*****justifie le contenu***/
+}
+
+  /***********Flexé-entre-element-des-colonnes***/
+.FlexColumnBetween {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+  /*******supprimer les decorations par defaut***/
+.DecorationNone {
+  text-decoration: none;
+}
+/*******mettre_les_texte_en_Gras_****/
+.TexteGras {
+  font-weight: bold;
+}
+
+.BordureNone {
+  border: none;
+}
+/**************Coloration des Etoile****/
+.bluestar {
+  color: #0065FC;
+}
+.greystar {
+  color: grey;
+}
+.Ensemble_Bloc_1_Bloc_2 {
+  margin-bottom: 20px;
+}
+/****************************************************navbar***********************************************/
+/***taille de l'element parent**/
+.Taille_Nav {
+  height: 100px;
+}
+.Taille_Liens {
+  width: 100%;    /***largeur de 45% par rapport a son parent ******/
+}
+.Taille_Liens_2_2 {
+  margin-left: 70%;
+}
+.Taille_Lien {
+  width: 140px;
+  height: 100px;
+}
+.Couleur_Lien2 {
+  color: black;
+}
+.Couleur_Lien3 {
+  color: #0065FC;
+}
+.Bordure_Nav {
+  height: 100px;
+  border-top: 1px solid transparent;
+}
+.Bordure_Nav:hover {
+  border-top: 1px solid #0065FC;     /******bordure du haut******/
+  cursor: pointer;
+}
+.Bordure_Nav:hover > {
+  color: #0065FC;
+}
+
+
+/*******************************************Header***********************************/
+.Desktop_None {
+  display: none;
+}
+.Bordure_recherche {
+  width: 400px;                          /******Largeur*****/
+  border-radius: 10px;                   /******Bordure_arrondue*****/
+  border: 0.5px solid #f2f2f2;         /******bordure*****/
+}
+
+.rembourrage_input {
+  padding-left: 20px;      /*****Rembourrage_a_gauche*****/
+}
+
+/***********************Taille*******************************/
+.Map_Icons {
+  height: 50px;                      /****Hauteur*******/
+  width: 50px;                       /****Largeur*******/
+  border-radius: 10px 0 0 10px;         /****bordure_arrondue****/
+  background-color: #f2f2f2;       /****couleur de fond***/
+}
+/**********************barre_de_recherche********************/
+.Recherche {
+  height: 50px;            /*****hauteur*****/
+  width: 230px;            /*****Largeur*****/
+  font-size: 18px;         /*****Taille de police***/
+  color: black;          /*****Couleur*****/
+  font-weight: bold;       /*****Poids de police****/
+}
+
+.bouton_Rechercher {
+  height: 50px;                     /*******Hauteur******/
+  width: 120px;                     /*******Largeur******/
+  color: #f2f2f2;
+  font-weight: bold;                /*******couleur de lecriture****/
+  cursor: pointer;                   /******curseur au survol*******/
+  border-radius: 0 10px 10px 0;      /****** l'arrondie des brodures****/
+  background-color: #0065FC;        /******fond de couleur*******/
+}
+.bouton_Rechercher:hover> {
+  color: #deebff;
+  background-color: #0065FC;
+} 
+/************************************filtres******************************/
+/******Marge du haut et du bas***/
+.margFiltre {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+/******Parent*****/
+.Filtre {
+  display: flex;
+  align-items: center;
+}
+
+/******H2 Filtre*****/
+.margFiltreTitre {
+  margin-right: 20px;
+}
+
+/***************************Ensemble h2 Icons et Texte*******************************/
+.FiltreTexteIcons {
+  border: 2px solid #f2f2f2;
+  height: 50px;
+  border-radius: 30px;
+  margin-right: 20px;
+}
+
+/******Survol texte****/
+.FiltreTexteIcons:hover> .FiltreTexte {
+  color: #0065FC;
+}
+
+/******survol Icons****/
+.FiltreTexteIcons:hover> .FiltreIcons {
+  color: #deebff;
+  background-color: #0065FC;
+}
+
+/*******texte******/
+.FitreTexte {
+  height: 50px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 0 25px 25px 0;
+}
+
+/******Icons*****/
+.FiltreIcons {
+  border-radius: 25px;
+  width: 52px;
+  height: 52px;
+  color: #0065FC;
+  background-color: #deebff;
+}
+
+/****************************INFO ICONE********************************************/
+
+.Info_Icon {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.parent_Icon {
+  width: 20px;
+  height: 20px;
+  border: 2px solid #f2f2f2;
+  border-radius: 25px;
+  margin-right: 5px;
+  color: #0065FC;
+}
+
+/**********************************HEBERGEMENTS***et****POPULAIRES********************************/
+/**********division du Tableau******/
+
+.Taille_Hebergements {            /**Tableau hebergement a marseille***/
+  flex: 2;                        /***Deux fois plus grand que le deuxieme tableau***/
+  height: 650px;                  /****Ils ont la meme Taille en hauteur******/
+  margin-right: 20px;             /*****La Marge du coté gauche****/
+  border-radius: 10px;            /******L'Arrondie des bordures****/
+  background-color:#f2f2f2;     /*******Fond de couleur******/
+}
+
+.Taille_Populaires {               /**Tableau les plus populaires***/
+  flex: 1;                         /***Il est mon plus grand que le premier**/
+  height: 650px;                   /****ls ont la meme taille en hauteur****/
+  margin-left: 20px;               /*****La Marge du coté gauche*****/
+  border-radius: 10px;             /******L'Arrondue du bordure****/
+  background-color: #f2f2f2;     /*******meme fond de couleur**********/
+}
+
+/***Cannebière_image*******/
+.imgHebergements1 {
+  background-image: url("./img/hebergements/cannebiere.jpg");
+  object-fit: cover;
+  background-position: center ;
+  width: 100%;
+  height: 120px;
+  border-radius: 15px 15px 0 0;
+}
+/***Hotel_du_port_image*******/
+.imgHebergements2 {
+  background-image: url("./img/hebergements/hotel_du_port.jpg");
+  object-fit: cover;
+  background-position: center ;
+  width: 100%;
+  height: 120px;
+  border-radius: 15px 15px 0 0;
+}
+/***Hotel_les_mouettes_image*******/
+.imgHebergements3 {
+  background-image: url("./img/hebergements/hotel_les_mouettes.jpg");
+  object-fit: cover;
+  background-position: center ;
+  width: 100%;
+  height: 120px;
+  border-radius: 15px 15px 0 0;
+}
+/***Hotel_de_la_mer_image*******/
+.imgHebergements4 {
+  background-image: url("./img/hebergements/hote_de_la_mer.jpg");
+  object-fit: cover;
+  background-position: center ;
+  width: 100%;
+  height: 120px;
+  border-radius: 15px 15px 0 0;
+}
+/***Auberge_le_panier_image*******/
+.imgHebergements5 {
+  background-image: url("./img/hebergements/auberge_le_panier.jpg");
+  object-fit: cover;
+  background-position: center ;
+  width: 100%;
+  height: 120px;
+  border-radius: 15px 15px 0 0;
+}
+/***Chez_Amina_image*******/
+.imgHebergements6 {
+  background-image: url("./img/hebergements/chez_amina.jpg");
+  object-fit: cover;
+  background-position: center ;
+  width: 100%;
+  height: 120px;
+  border-radius: 15px 15px 0 0;
+}
+/***l'ensemble_du_Bloc_Hebergements***/
+.Bloc_Hebergements {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+/***Le_Cadre_de_l'image_et_tout_le_contour_et_tout_les_images___Hebergements*****/
+.Cadre_Hebergements {
+  width: 30%;
+  height: auto;
+  background-color: white;
+  padding: 1%;
+  border-radius: 15px;
+}
+.Bloc_1 {
+  margin-bottom: 10px;
+  font-size: 0.8em;
+}
+.Bloc_2 {
+  margin-top: 10px;
+  font-size: 0.8em;
+}
+.Cadre_details_Hebergements {
+  width: 90%;
+}
+/*************************************LES PLUS POPULAIRES************************************************
+
+/***Chez_Amina_image*******/
+.imgPopulaires1 {
+  background-image: url("./img/populaires/soleil_du_matin.jpg");
+  object-fit: cover;
+  background-position: center;
+  width: 35%;
+  height: 160px;
+  border-radius: 15px 0 0 15px;
+}
+/***Chez_Amina_image*******/
+.imgPopulaires2 {
+  background-image: url("./img/populaires/au_coeur_de_l\'eau.jpg");
+  object-fit: cover;
+  background-position: center;
+  width: 35%;
+  height: 160px;
+  border-radius: 15px 0 0 15px;
+}
+/***Chez_Amina_image*******/
+.imgPopulaires3 {
+  background-image: url("./img/populaires/bleu_et_blanc.jpg");
+  object-fit: cover;
+  background-position: center;
+  width: 35%;
+  height: 160px;
+  border-radius: 15px 0 0 15px;
+}
+.BlocPopulaires {
+  padding-left: 20px;
+  padding-right: 5px;
+}
+.CadrePopulaires {
+  width: 95%;
+  height: auto;
+  background-color: white;
+  padding: 1%;
+  border-radius: 15px;
+}
+.BlocPopulaires_1 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.BlocPopulaires_2 {
+ margin-top: 10px;
+ margin-bottom: 10px;
+}
+.BlocPopulaires_3 {
+  margin-top: 10px;
+  margin-bottom: 10;
+}
+
+.CadreDetailsPopulaires {
+  width: 90%;
+  font-size: 0.8em;
+  padding-left: 40px;
+  padding-top: 5px;
+}
+.Notations_populaires {
+  padding-top: 20px;
+}
+/***********************Activités a Marseille*******************************/ 
+.imgActivites_1 {
+  background-image: url("./img/activités/vieux_port.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 530px;
+  border-radius: 15px 15px 0 0;
+}
+.imgActivites_2 {
+  background-image: url("./img/activités/fort_de_pomègues.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 250px;
+  border-radius: 15px 15px 0 0;
+}
+.imgActivites_3 {
+  background-image: url("./img/activités/iles_de_frioul.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 150px;
+  border-radius: 15px 15px 0 0;
+}
+.imgActivites_4 {
+  background-image: url("./img/activités/parc_national.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 530px;
+  border-radius: 15px 15px 0 0;
+}
+.imgActivites_5 {
+  background-image: url("./img/activités/notre_Dame.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 200px;
+  border-radius: 15px 15px 0 0;
+}
+.imgActivites_6 {
+  background-image: url("./img/activités/parc_longchamp.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 250px;
+  border-radius: 15px 15px 0 0;
+}
+/*******Organisation du tableau General******/
+.Bloc_Activites {
+  width: 100%;
+  height: 600px;
+}
+/**********Definir le Cadre de General****/
+.Cadre_Activites {
+  width: 23%;
+  border-radius: 15px;
+  box-shadow: 5px 5px 5px 1px #f2f2f2;
+}
+/******Titre*****/
+.Titre_Activites {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 20px;
+  padding: 5%;
+  width: 95%;
+}
+/**********les images 2_3_5_6***************/
+.Cadre_Activites_img_2356 {
+  width: 100%;
+  border-radius: 15px;
+  box-shadow: 5px 5px 5px 1px #f2f2f2;
+}
+/******Pour creer un deuxieme bloc****/
+.Bloc_Activites_img_2356 {
+  width: 25%;
+  height: 600px;
+}
+/*************************************FOOOTERRRRR*****************************************/
+.Bloc_Pied_du_page {
+  height: 300px;
+  margin-top: 50px;
+  background-color: #f2f2f2;
+}
+.Titre_Pied {
+  height: 60px;
+  margin-top: -50px;
+}
+.Premier_h2_et_P {
+  margin-left: 5%;
+}
+.Dernier_h2_et_P {
+  margin-right: 15%;
+}
+
+
+/****************Adapatation aux differents tailles D'ecrans**********/
+@media screen and (max-width:1295px) {
+  .Taille_Liens_2_2 {
+    margin-left: 45%;
+  }
+  .Cadre_Hebergements {
+    min-height: 150px;
+  }
+  .Taille_Hebergements {
+    min-height: auto;
+    padding: 20px;
+  }
+  .Taille_Populaires {
+    min-height: auto;
+    padding: 20px;
+  }
+  .Titre_Poulaires {
+    margin-top: 0;
+  }
+}
+@media screen and (max-width: 990px) {
+  .margFiltre {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .FiltreTexteIcons {
+    margin-bottom: 20px;
+  }
+  #Hebergements {
+    flex-direction: column-reverse;
+    width: 100%;
+  }
+  .Bloc_Hebergements {
+    flex: none;
+    width: 90%;
+    margin-right: 0;
+    margin-top: 50px;
+    padding: 5%;
+  }
+  .BlocPopulaires {
+    flex:none;
+    width: 90%;
+    margin-left: 0;
+    padding: 5%;
+  }
+}
+@media screen and (max-width: 770px) {
+  .Taille_Liens {
+    width: 90%;
+  }
+  .Taille_Liens_2_2 {
+    margin-left: 20%;
+  }
+  .Bloc_Hebergements {
+    height: auto;
+  }
+  .Bloc_1 {
+  flex-direction: column;
+  margin-bottom: 0;
+  }
+   .Bloc_2 {
+  flex-direction: column;
+  margin-top: 0;
+  }
+  .Cadre_Hebergements {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .CadreDetailsPopulaires {
+    min-height: auto;
+  }
+  .Bloc_BlocPopulaires {
+    height: auto;
+    flex-direction: column;
+  }
+  .CadrePopulaires {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+  .CadreDetailsPopulaires {
+    min-height: auto;
+  }
+  .Bloc_Activites {
+    flex-direction: column;
+    height: auto;
+  }
+  .Cadre_Activites {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+  .Bloc_Activites_img_2356 {
+    width: 100%;
+    height: auto;
+  }
+  .Cadre_Activites_img_2356 {
+    margin-bottom: 50px;
+  }
+  .imgActivites_1, 
+  .imgActivites_2, 
+  .imgActivites_3, 
+  .imgActivites_4, 
+  .imgActivites_5, 
+  .imgActivites_6 {
+    height: 200px;
+  }
+  .Bloc_Pied_du_page {
+    flex-direction: column;
+    height: auto;
+  }
+  .Titre_Pied {
+    width: 100%;
+    margin: 15px;
+    justify-content: flex-start;
+  }
+}
+@media screen and (max-width: 600px) {
+  .Taille_Lien3 {
+    flex-direction: row;
+  }
+  .Taille_Liens {
+    height: auto;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .Taille_Liens_2_2 {
+    order: 1;
+    width: 100%;
+    margin-left: 0;
+  }
+  .Taille_Lien_Mob {
+    width: 100%;
+    border-top: none;
+    border-bottom: 5px solid #f2f2f2;
+  }
+  .Taille_Lien:hover {
+    border-top: 0;
+    border-bottom: 5px solid #0065FC;
+  }
+  .Bordure_recherche {
+    width: auto;
+    border: none;
+    border-radius: 1px solid #f2f2f2;
+    border-top: 1px solid #f2f2f2;
+  }
+  .Recherche {
+    width: 200px;
+  }
+  .bouton_Rechercher {
+    width: 50px;
+    border-radius: 15px;
+  }
+  .Mobile_None {
+    display: none;
+  }
+  .Desktop_None {
+    display: block;
+  }
+  .CadreDetailsPopulaires {
+    min-height: auto;
+  }
+  .Bloc_BlocPopulaires {
+    height: auto;
+    flex-direction: column;
+  }
+  .CadrePopulaires {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .CadreDetailsPopulaires {
+    min-height: auto;
+  }
+  .Bloc_Pied_du_page{
+    margin-top: 5px;
+    margin-bottom: 50px;
+  }
+  .Titre_Pied {
+    margin-top: 15%;
+    margin-bottom: 15%;
+  }
+  .Premier_h2_et_P {
+    margin-top: 20px;
+    padding: 20px;
+  }
+}
