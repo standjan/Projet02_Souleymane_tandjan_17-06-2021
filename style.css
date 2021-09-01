@@ -1,11 +1,3 @@
-/***********L'ENSEMBLE DE MON PROJET*************/
-
-* ::before ::after{               /****Avant et Après****/
-  box-sizing: border-box;         /****Dimensionnement de la boite***/ 
-  margin: 0;                      /****Marge*****/
-  padding: 0;                     /****Rembourrage*****/
-}
-
 html, body {
   font-family: Raleway;           /*******font d'ecriture***/
   position: absolute;
@@ -106,7 +98,7 @@ html, body {
   border-top: 1px solid #0065FC;     /******bordure du haut******/
   cursor: pointer;
 }
-.Bordure_Nav:hover > {
+.Bordure_Nav:hover {
   color: #0065FC;
 }
 
@@ -150,7 +142,7 @@ html, body {
   border-radius: 0 10px 10px 0;      /****** l'arrondie des brodures****/
   background-color: #0065FC;        /******fond de couleur*******/
 }
-.bouton_Rechercher:hover> {
+.bouton_Rechercher:hover {
   color: #deebff;
   background-color: #0065FC;
 } 
@@ -372,7 +364,7 @@ html, body {
 }
 .BlocPopulaires_3 {
   margin-top: 10px;
-  margin-bottom: 10;
+  margin-bottom: 10px;
 }
 
 .CadreDetailsPopulaires {
@@ -624,7 +616,6 @@ html, body {
   .Bordure_recherche {
     width: auto;
     border: none;
-    border-radius: 1px solid #f2f2f2;
     border-top: 1px solid #f2f2f2;
   }
   .Recherche {
